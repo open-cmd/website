@@ -1,0 +1,45 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.coming-soon {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: pulse 2s infinite;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ffe,
+                     0 0 20px #ff9a9e, 0 0 30px #fad0c4,
+                     0 0 40px #ffdde1;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ffe,
+                     0 0 30px #ff9a9e, 0 0 40px #fad0c4,
+                     0 0 50px #ffdde1;
+    }
+}
