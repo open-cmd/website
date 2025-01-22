@@ -6,11 +6,15 @@
     <title>近日公開</title>
     <script>
         window.onload = function() {
-            const userLang = navigator.language || navigator.userLanguage;
-            if (userLang.startsWith('ja')) { 
-                window.location.href = 'index.html';
-            } else {
-                window.location.href = '../index.html';
+            if (!sessionStorage.getItem('redirected')) {
+                const userLang = navigator.language || navigator.userLanguage;
+                if (userLang.startsWith('ja')) {
+                    sessionStorage.setItem('redirected', 'true');
+                    window.location.href = 'index.html';
+                } else {
+                    sessionStorage.setItem('redirected', 'true');
+                    window.location.href = '../index.html';
+                }
             }
         }
     </script>
