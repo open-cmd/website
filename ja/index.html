@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>近日公開</title>
+    <script>
+        window.onload = function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('ja')) { 
+                window.location.href = 'index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="coming-soon">近日公開</h1>
+        <p class="subtext">素晴らしいものを期待していてほしい</p>
+    </div>
+</body>
+</html>
