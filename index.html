@@ -4,20 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
-<script>
-    window.onload = function() {
-        if (!sessionStorage.getItem('redirected')) {
-            const userLang = navigator.language || navigator.userLanguage;
-            if (userLang.startsWith('ja') && !window.location.href.includes('ja/index.html')) {
-                sessionStorage.setItem('redirected', 'true');
-                window.location.href = 'ja/index.html';
-            } else if (!userLang.startsWith('ja') && !window.location.href.includes('index.html')) {
-                sessionStorage.setItem('redirected', 'true');
-                window.location.href = 'index.html';
-            }
-        }
-    }
-</script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
