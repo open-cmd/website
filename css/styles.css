@@ -24,12 +24,6 @@ body, html {
     animation: pulse 2s infinite;
 }
 
-.subtext {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
 
 @keyframes pulse {
     0%, 100% {
